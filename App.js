@@ -17,10 +17,10 @@ const screenOption = ({ route }) => ({
     let iconName;
     switch (route.name) {
       case "HomeStack":
-        iconName = "home";
+        iconName = "newspaper-o";
         break;
       case "ClipStack":
-        iconName = "bookmark";
+        iconName = "star";
         break;
     }
     return <FontAwesome name={iconName} size={size} color={color} />;
@@ -54,12 +54,12 @@ export default function App() {
             <Tab.Screen
               name="HomeStack"
               component={HomeStack}
-              options={{ headerShown: false, title: "Home" }}
+              options={{ headerShown: false, title: "Homeです" }}
             />
             <Tab.Screen
               name="ClipStack"
               component={ClipStack}
-              options={{ headerShown: false, title: "Clip" }}
+              options={{ headerShown: false, title: "Clipです" }}
             />
           </Tab.Navigator>
         </NavigationContainer>
